@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idOrder": {
+      "type": "biginteger"
+    },
+    "Specifications": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "biginteger"
+    },
+    "DateStartSupply": {
+      "type": "date"
+    },
+    "DownloadSite": {
+      "type": "string"
+    },
+    "NominateDownloadSite": {
+      "type": "string"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::city.city"
+    },
+    "tools_e": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tools-e.tools-e"
+    },
+    "AttachPhotoOrder": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "OrderAddress": {
+      "type": "text"
+    },
+    "UploadSite": {
+      "type": "string"
+    },
+    "locationWork": {
+      "type": "string"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "type_oder": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-oder.type-oder"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offer_es",
+  "info": {
+    "singularName": "offer-e",
+    "pluralName": "offer-es",
+    "displayName": "OfferE",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idOffer": {
+      "type": "biginteger"
+    },
+    "locationWork": {
+      "type": "string"
+    },
+    "OrderAddress": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "RentalTerm": {
+      "type": "string"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::city.city"
+    },
+    "tools_e": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tools-e.tools-e"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "type_oder": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-oder.type-oder"
+    }
+  }
+}

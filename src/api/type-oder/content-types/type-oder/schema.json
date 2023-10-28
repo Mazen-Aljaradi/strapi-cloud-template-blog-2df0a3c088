@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_oders",
+  "info": {
+    "singularName": "type-oder",
+    "pluralName": "type-oders",
+    "displayName": "typeOder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

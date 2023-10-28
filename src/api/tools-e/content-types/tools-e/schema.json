@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools_es",
+  "info": {
+    "singularName": "tools-e",
+    "pluralName": "tools-es",
+    "displayName": "toolsE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
